@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                build build job: 'PES2UG20CS087-1'
+                build job: 'PES2UG20CS087-1'
             }
         }
         stage('Test') {
