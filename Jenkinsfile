@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'g++ main/hello.cpp -o hello_exec'
+                build PES2UG20CS087-1
             }
         }
         stage('Test') {
             steps {
-                sh './hello_exec'
+                sh '/var/jenkins_home/workspace/PES2UG20CS087-1/main/hello_exec'
             }
         }
       stage('Deploy') {
